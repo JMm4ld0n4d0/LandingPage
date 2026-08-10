@@ -1,0 +1,329 @@
+/*
+
+1.El orden de definicion es y de forma alfabetica:
+
+1. Etiquetas html
+2. Identificadores
+3. Clases
+
+2. Los atributos tambien se ordenan alfabeticamente.
+
+3. En el body siempre se debe definir un tamaño de fuente.
+
+4. Para agregar un background puedes utilizar  
+background: url(../img/fondo10.jpg) no-repeat center center fixed;
+
+*/
+
+@font-face{
+	font-family: "Montserrat";
+	font-style: normal;
+	font-weight: normal;
+	src: url(../fonts/Montserrat.ttf) format ("truetype");
+}
+
+*
+{
+	border:0;
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+#banner
+{
+	background: #66b3d1;
+	width: 100%;
+	height: auto;
+	padding: 40px;
+}
+
+
+.logo {
+    border-radius: 50%; 
+    margin-right: 30px; 
+    
+}
+#promo
+{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 20px;
+}
+
+#banner #promo h1
+{
+	font-size: 36px;
+	margin-bottom: 50px;
+	
+}
+
+
+body 
+{
+	background-color: #004D6B;
+	font-family: "Montserrat", Helvetica, Verdana;
+	font-size: 12px;
+	background-size: cover;
+}
+
+#contenedor
+{
+	width: 100%;
+	max-width: 1000px; 
+	height: auto;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+footer
+{
+	
+	height: 50px;
+	width: 100%;
+	color: white;
+	text-align: center;
+	font-size: 12px;
+	padding-top: 10px;
+	shape-margin: 15;
+    background: rgba(1,1,1, 0.2);
+ 
+}
+
+
+footer a
+{
+	text-decoration: none;
+    float: left;
+       
+}
+
+.fa:hover 
+{
+  opacity: 0.7;
+}
+
+.fa-facebook
+{
+     margin-left: 480px;
+     margin-top: 10px;
+     color: white;
+     
+}
+
+.fa-youtube
+{
+	 margin-left: 10px;
+	 margin-top: 10px;
+	 color: white;
+	 
+}
+
+header
+{
+	height: 145px;
+	width: 100%; 
+}
+
+header h1
+{
+       font-size: 30px;
+       margin: 60px 0 0 40px;
+       position: absolute;
+       color: Black;
+}
+
+nav ul
+{
+	text-align: right;
+}
+
+nav ul li 
+{
+	display: inline-block;
+	font-size: 16px;
+	margin-right: 40px;
+	margin-top: 1px;
+	margin-left: 10px;
+}
+
+nav ul li a 
+{
+	text-decoration: none;
+	color: white;
+}
+nav ul li a:hover
+{
+	color: #99cde2;
+	text-shadow: 2px 2px 6px #13389e;
+}
+#promo a
+{
+	background: #0081b3;
+	width: 200px;
+	height: 40px;
+	font-size: 25px;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 10px;
+	padding-top: 10px;
+	margin-top: 160px;
+	position: absolute;
+}
+#promo a:hover
+{
+	background: #004d6b;
+	
+}
+#promo a:active
+{
+	font-size: 20px;
+}
+#promo img
+{
+	position: relative;
+	margin: 0;
+	height: 250px;
+	width: 100%;
+	max-width: 400px;
+	border-radius: 8px; 
+}
+
+
+
+#servicios
+{
+	margin: 20px 0;
+	height: auto; 
+	width: 100%;
+	background: #66b3d1;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 20px;
+	padding: 20px;
+}
+
+#servicios a{
+	background: #0081b3;
+	font-size: 15px;
+	color: white;
+	text-decoration: none;
+	border-radius: 5px;
+	margin-top:5px;
+	padding: 3px;
+}
+
+#servicios a:hover{
+	background: #004d6b;
+}
+
+#servicios a:active{
+	font-size: 12px;
+}
+
+#servicio1, #servicio2, #servicio3
+{
+	display: block;
+	width: 100%;
+	max-width: 290px;
+	height: auto;
+	padding: 20px;
+	text-align: justify;
+}
+
+@media (max-width: 768px) {
+    #contenedor {
+        padding: 0 15px;
+    }
+
+    header {
+        height: auto;
+        padding: 15px 0;
+    }
+
+    .logo {
+        display: block;
+        margin: 0 auto 10px auto;
+    }
+
+    nav ul li {
+        display: block;
+        float: none;
+        margin: 0 0 8px 0;
+        text-align: center;
+    }
+
+    #banner {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        text-align: center;
+    }
+
+    #promo {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #banner #promo h1 {
+        position: relative;
+        margin: 0 0 20px 0;
+        font-size: 28px;
+    }
+
+    #promo a {
+        position: relative;
+        margin: 0 0 20px 0;
+        display: inline-block;
+        width: auto;
+        height: auto;
+        padding: 10px 20px;
+        font-size: 20px;
+    }
+
+    #promo img {
+        width: 100%;
+        max-width: 350px;
+        height: auto;
+        margin: 0 auto;
+        display: block;
+    }
+
+    #servicios {
+        padding-bottom: 10px;
+    }
+
+    #servicio1, #servicio2, #servicio3 {
+        width: 100%;
+        max-width: 100%;
+        margin: 0 0 20px 0;
+        height: auto;
+    }
+
+    footer {
+        height: auto;
+        padding: 15px 10px;
+    }
+
+    footer a {
+        float: none;
+        display: inline-block;
+        margin: 0 8px 10px 8px;
+    }
+
+    .fa-facebook, .fa-youtube {
+        margin: 0 5px;
+    }
+}
+
+#servicios article img
+{
+	width: 100%; 
+	height: 150px; 
+	border-radius: 8px; 
+	margin-bottom: 5px;
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
